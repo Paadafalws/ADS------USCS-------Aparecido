@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main(void)
+{
+	float X, Y, Resultado1,Resultado2,Resultado3,Resultado4;
+  printf("\n Calcular Multiplica, soma , susbtraçao, e divisao**");
+  printf("\n Informe Y ");
+  scanf("%f",&X);
+  printf("\n Informe X ");
+  scanf("%f",&Y);
+  Resultado1 = (X / Y);
+  Resultado2 = (X - Y);
+  Resultado3 = (X + Y);
+  Resultado4 = (X * Y);
+  printf("\n Resultado = %f ",Resultado1);
+  printf("\n Resultado = %f ",Resultado2);
+  printf("\n Resultado = %f ",Resultado3);
+  printf("\n Resultado = %f ",Resultado4);
+  return 0;
+
+}
