@@ -1,0 +1,41 @@
+ #include<stdio.h>
+ 
+ int main ()
+ {
+	double dinheiro=0 ,cartao=0 ,cheque=0,dinheiroValor=0 ,cartaoValor=0 ,chequeValor=0 ,TOTAL=0 ;
+	double MediaDinheiro=0 ,MediaCartao=0 ,MediaCheque=0 ,PrecoDia=0 ;
+	double clientes =0 ;
+	
+	printf("Quantos clientes teve ? \n");
+	scanf( "%lf",&clientes);
+	//=======================================
+	printf("Quantos clientes pagou com cartao ? \n");
+	scanf( "%lf",&cartao);
+	printf("Qual foi o valor ? \n");
+	scanf( "%lf",&cartaoValor);		
+    //=========================================	
+	printf("Quantos clientes pagou com dinheiro ? \n");
+	scanf( "%lf",&dinheiro);
+	printf("Qual foi o valor ? \n");
+	scanf( "%lf",&dinheiroValor);	
+	//=================================================   
+	printf("Quantos clientes pagou com cheque ? \n");
+	scanf( "%lf",&cheque);
+	printf("Qual foi o valor ? \n");
+	scanf( "%lf",&chequeValor);	
+	//===================================================
+	MediaDinheiro = dinheiroValor /dinheiro;
+	MediaCartao = cartaoValor /cartao;
+	MediaCheque = chequeValor /dinheiro;
+	PrecoDia = (dinheiroValor+cartaoValor+chequeValor)/clientes;
+	TOTAL = PrecoDia * clientes;
+	//============================================================
+	printf("Sua media foi %lf\n",MediaDinheiro);
+	printf("Sua media foi %lf\n",MediaCartao);
+	printf("Sua media foi %lf\n",MediaCheque);
+	printf("Sua media foi %lf\n",TOTAL);
+	
+	
+		 
+	return 0;
+ }
